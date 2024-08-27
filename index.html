@@ -15,8 +15,9 @@
   <link rel="preload" as="image" href="img/hero-slider-1.jpg">
   <link rel="preload" as="image" href="img/hero-slider-2.jpg">
   <link rel="preload" as="image" href="img/hero-slider-3.jpg">
-
   <link rel="stylesheet" href="css/style.css">
+
+
 
 </head>
 
@@ -120,7 +121,13 @@
 
             <span class="span">Nossos Chefs</span>
           </a>
-        </li>
+        </li>        <li class="navbar-item">
+        <a href="signup.html" class="navbar-link hover-underline">
+          <div class="separator"></div>
+
+          <span class="span">Cadastrar</span>
+        </a>
+      </li>
 
         <li class="navbar-item">
           <a href="#" class="navbar-link hover-underline">
@@ -1153,4 +1160,15 @@
 
 </body>
 
+<script>
+
+  (function init() {
+    // code to run on init
+    const token = localStorage.getItem('token');
+    console.log('Token encontrado em index.html:', token);
+    if (!token) {
+      window.location.href = "signin.html";
+    }
+  })();
+</script>
 </html>
