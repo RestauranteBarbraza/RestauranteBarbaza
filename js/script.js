@@ -139,5 +139,11 @@ window.addEventListener("mousemove", function (event) {
     y = y * Number(parallaxItems[i].dataset.parallaxSpeed);
     parallaxItems[i].style.transform = `translate3d(${x}px, ${y}px, 0px)`;
   }
+  const paragraphs = document.querySelectorAll('p');
 
+  paragraphs.forEach((paragraph) => {
+    const text = paragraph.textContent;
+    const newText = text.toLowerCase();
+    paragraph.textContent = newText;
+  });
 });

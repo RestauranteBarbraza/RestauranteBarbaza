@@ -2228,3 +2228,6 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
+p {
+  text-transform: lowercase;
+}
