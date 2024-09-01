@@ -2231,3 +2231,8 @@ h1 {
 p {
   text-transform: lowercase;
 }
+.headline-1 {
+  font-size: 3.5rem; /* Diminuir o tamanho da fonte */
+  line-height: 1.2;  /* Ajustar o espaçamento entre as linhas */
+  margin-bottom: 20px; /* Adicionar margem inferior se necessário */
+}
